@@ -62,7 +62,8 @@ defmodule HelloLights.Mixfile do
   def deps(target) do
     [{:nerves_runtime, "~> 0.1.0"},
      {:"nerves_system_#{target}", "~> 0.11.0", runtime: false},
-     {:nerves_leds, "~> 0.7.0"}]
+     {:nerves_leds, "~> 0.7.0"},
+     {:nerves_networking, "~> 0.6.0"}]
   end
 
   # We do not invoke the Nerves Env when running on the Host
