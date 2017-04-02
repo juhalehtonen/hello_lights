@@ -36,7 +36,7 @@ defmodule HelloLights do
   end
 
   @doc "Attempts to perform a DNS lookup to test connectivity."
-  def test_dns(led_key, hostname \\ 'nerves-project.org') do
+  def test_dns(led_key, hostname \\ 'evermade.fi') do
     case :inet_res.gethostbyname(hostname) do
       {:ok, _} ->
         Leds.set [{led_key, true}]
