@@ -9,8 +9,8 @@ defmodule HelloLights do
 
   @interface :eth0
 
-  @on_duration  100 # ms
-  @off_duration 100 # ms
+  @on_duration  300 # ms
+  @off_duration 200 # ms
 
   alias Nerves.Leds
   require Logger
